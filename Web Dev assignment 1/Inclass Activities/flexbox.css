@@ -1,0 +1,19 @@
+.container{
+    border: 2px solid greenyellow;
+    display: flex; /*default orientation is horizontal*/
+    flex-direction: row; /*row-reverse starts from the right side*/ 
+    /*column-reverse starts from the last item to first item*/ 
+    justify-content:space-evenly;
+}
+
+.item{
+    background-color: brown;
+    margin: 5px;
+    border: 2px solid white;
+    height: 100px;
+    width: 100px;
+}
+
+.item .item3{
+    align-items: center;
+}

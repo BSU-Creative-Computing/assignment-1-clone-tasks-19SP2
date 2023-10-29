@@ -1,0 +1,25 @@
+$defaultcolor: grey;
+$warmcolor: yellow;
+$coolcolor: blue;
+
+.default-div{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: $defaultcolor;
+    color: white;
+}
+
+.warm-div{
+    @extend .default-div;
+    background-color: $warmcolor;
+    color: black;
+}
+
+.cool-div{
+    @extend .default-div;
+    background-color: $coolcolor;
+}

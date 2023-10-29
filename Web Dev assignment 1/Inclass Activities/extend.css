@@ -1,0 +1,19 @@
+.default-div, .cool-div, .warm-div {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  background-color: grey;
+  color: white;
+}
+
+.warm-div {
+  background-color: yellow;
+  color: black;
+}
+
+.cool-div {
+  background-color: blue;
+}/*# sourceMappingURL=extend.css.map */

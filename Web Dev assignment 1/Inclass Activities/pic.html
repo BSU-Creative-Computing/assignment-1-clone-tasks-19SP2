@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture tag</title>
+    <link rel="stylesheet" href="pic.css">
+</head>
+<body>
+    <!--picture tag is a HTML5 tag, the user may not always use the latest version of browser 
+        so it is safe to add an img tag with it-->
+    
+    <h2>Basic example of <code>picture</code> element</h2>
+
+    <picture>
+        <source srcset="small.jpg" media="(max-width:600px)">
+        <source srcset="medium.jpg" media="(max-width:900px)">
+        <source srcset="large.jpg">
+        <img src="4k-desktop-wallpaper.-2560×1440.jpg"> <!--for old browser-->
+    </picture>
+
+</body>
+</html>

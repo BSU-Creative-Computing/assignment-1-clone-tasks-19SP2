@@ -1,0 +1,50 @@
+section {
+  display: flex;
+}
+section div {
+  flex-grow: 1;
+  border-radius: 50%;
+}
+
+.medium, .biggest, .bigger, .smallest, .smaller {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: pink;
+  cursor: pointer;
+  font-size: 1em;
+}
+.medium:hover, .biggest:hover, .bigger:hover, .smallest:hover, .smaller:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.smaller {
+  height: 100px;
+  background-color: black;
+  font-size: 0.9em;
+  color: white;
+}
+
+.smallest {
+  height: 50px;
+  background-color: #1a1a1a;
+  font-size: 0.8em;
+  color: white;
+}
+
+.bigger {
+  height: 200px;
+  background-color: red;
+  font-size: 1.1em;
+  color: white;
+}
+
+.biggest {
+  height: 250px;
+  background-color: #cc0000;
+  font-size: 1.2em;
+  color: white;
+}/*# sourceMappingURL=wc.css.map */

@@ -1,0 +1,25 @@
+$bg:#DADDB1;
+$fontcolor:#192655;
+$fontfam:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+body{
+    background-color: $bg;
+    font-family: $fontfam;
+    color: $fontcolor;
+    margin: 30px;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+li{
+    padding: 10px;
+}
+
+footer{
+    background-color: $fontcolor;
+    color: $bg;
+    text-align: center;
+}

@@ -1,0 +1,42 @@
+/*
+$bgcolor:green;
+$textcolor:white;
+$fontsize:18px;
+$fontfam: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+$webwidth:680px;
+
+body{
+    background-color: $bgcolor;
+    color: $textcolor;
+    font-size: $fontsize;
+    font-family: $fontfam;
+}
+
+#container{
+    width: $webwidth;
+    background-color: $textcolor;
+    color: $bgcolor;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}*/
+body {
+  font-family: Helvetica;
+  font-size: 18px;
+  color: red;
+}
+
+#container {
+  width: 680px;
+  border: 1px solid black;
+}
+
+.button1 {
+  color: lime;
+}
+
+.button2 {
+  color: skyblue;
+}
+
+.button3 {
+  color: orange;
+}/*# sourceMappingURL=first.css.map */

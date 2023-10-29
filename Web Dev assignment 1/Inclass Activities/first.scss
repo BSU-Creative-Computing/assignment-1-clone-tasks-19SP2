@@ -1,0 +1,52 @@
+/*
+$bgcolor:green;
+$textcolor:white;
+$fontsize:18px;
+$fontfam: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+$webwidth:680px;
+
+body{
+    background-color: $bgcolor;
+    color: $textcolor;
+    font-size: $fontsize;
+    font-family: $fontfam;
+}
+
+#container{
+    width: $webwidth;
+    background-color: $textcolor;
+    color: $bgcolor;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}*/
+
+$myfont: Helvetica;
+$mycolor:red;
+$myfontsize:18px;
+$mywidth:680px;
+$border:1px solid black;
+$b1: lime;
+$b2: skyblue;
+$b3: orange;
+
+body{
+    font-family: $myfont;
+    font-size: $myfontsize;
+    color: $mycolor;
+}
+
+#container{
+    width: $mywidth;
+    border: $border;
+}
+
+.button1{
+    color: $b1;
+}
+
+.button2{
+    color: $b2;
+}
+
+.button3{
+    color: $b3;
+}

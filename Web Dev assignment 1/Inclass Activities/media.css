@@ -1,0 +1,80 @@
+body{
+    margin: 2%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+section p{
+    margin: 10px;
+}
+
+section img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*@media screen and (max-width: 500px){
+    section{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 500px){
+    #butterfly{
+    float: left;
+    width: 45%;
+    padding: 1%;
+   }
+   #bird{
+    float: right;
+    width: 45%;
+    padding: 1%;
+   }
+   #bird2{
+    width: 45%;
+    padding: 1%;
+   }
+}*/
+
+@media screen and (max-width: 480px){
+    section{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 800px){
+    #butterfly{
+        float: left;
+        width: 45%;
+        padding: 1%;
+    }
+    #bird{
+        float: right;
+        width: 45%;
+        padding: 1%;
+    }
+    #bird2{
+        width: 45%;
+        padding: 1%;
+    }
+}
+
+@media screen and (min-width: 800px){
+    #butterfly{
+        float: left;
+        width: 35%;
+        padding: 1%;
+    }
+    #bird{
+        float: right;
+        width: 35%;
+        padding: 1%;
+    }
+    #bird2{
+        float: right;
+        width: 35%;
+        padding: 1%;
+    }
+    .container{
+        display:flex;
+    }
+}

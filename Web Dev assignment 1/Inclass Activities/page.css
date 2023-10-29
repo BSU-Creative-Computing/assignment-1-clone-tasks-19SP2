@@ -1,0 +1,21 @@
+body {
+  background-color: #DADDB1;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #192655;
+  margin: 30px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+li {
+  padding: 10px;
+}
+
+footer {
+  background-color: #192655;
+  color: #DADDB1;
+  text-align: center;
+}/*# sourceMappingURL=page.css.map */

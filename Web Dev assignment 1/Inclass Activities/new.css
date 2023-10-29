@@ -1,0 +1,41 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 4%;
+}
+
+header h1{
+    float: left;
+}
+
+header nav{
+    margin-left: 80%;
+}
+
+header nav ul{
+    list-style-type: none;
+    position: absolute;
+    display:inline-flex;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+.left{
+    float: left;
+    margin-right: 70px;
+}
+
+.side{
+    margin-left: 70%;
+    background-color: yellow;
+    padding: 1%;
+    border: 2%;
+}
+
+.side h2{
+    background-color: red;
+    color: white;
+    padding: 3px;
+}

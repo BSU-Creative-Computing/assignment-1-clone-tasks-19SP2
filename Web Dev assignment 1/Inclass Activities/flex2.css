@@ -1,0 +1,36 @@
+.container{
+    height: 90vh;
+    background-color: rgb(34, 43, 43);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.item{
+    width: 200px;
+    height: auto;
+    margin: 2px;
+    border: 2px dashed white;
+}
+
+.item1, .item5{
+    align-self:flex-end;
+}
+
+.item3{
+    align-self: center;
+}
+
+.item2{
+    align-self:flex-start;
+    flex-grow: 1;
+}
+
+.item4{
+    align-self:flex-start;
+    flex-grow: 1;
+}

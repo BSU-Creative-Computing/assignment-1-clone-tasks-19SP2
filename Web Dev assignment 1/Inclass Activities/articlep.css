@@ -1,0 +1,43 @@
+body{
+    width: 100vw;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+article{
+    width: 100%;
+    background-color: #aaffc5;
+    text-align: center;
+    padding: 50px 0px;
+    display: none;
+}
+
+@media screen and (max-width:495px) and (orientation:portrait){
+    #mobile-portrait{
+        display: block;
+        background-color: lime;
+    }
+}
+
+@media screen and (max-height:483px) and (orientation:landscape){
+    #mobile-landscape{
+        display: block;
+        background-color: blue;
+    }
+}
+
+@media screen and (min-width :500px) and (orientation:portrait){
+    #tablet-portrait{
+        display: block;
+        background-color: pink;
+    }
+}
+
+@media screen and (min-height :490px) and (orientation:landscape){
+    #tablet-landscape-or-desktop{
+        display: block;
+        background-color: yellow;
+    }
+}
+
+        
