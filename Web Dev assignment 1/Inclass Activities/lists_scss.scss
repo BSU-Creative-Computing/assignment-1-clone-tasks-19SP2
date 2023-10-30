@@ -1,0 +1,40 @@
+$roundness: 0px 10px 20px 30px 40px 50px;
+$color: red green blue yellow purple;
+
+/*index starts from 1 in SCSS*/
+
+.img1{
+    border: 3px solid nth($color, 4);
+    border-radius: nth($roundness, 2);
+    width: 50%;
+    height: auto;
+}
+/*nth used to select particular value*/
+
+.img2{
+    border: 3px solid nth($color, 2);
+    border-radius: nth($roundness, 4);
+    width: 50%;
+    height: auto;
+}
+
+.img3{
+    border: 3px solid nth($color, 3);
+    border-radius: nth($roundness, 5);
+    width: 50%;
+    height: auto;
+}
+
+.img4{
+    border: 3px solid nth($color, 5);
+    border-radius: nth($roundness, 6);
+    width: 50%;
+    height: auto;
+}
+
+.img5{
+    border: 3px solid nth($color, 1);
+    border-radius: nth($roundness, 1);
+    width: 50%;
+    height: auto;
+}

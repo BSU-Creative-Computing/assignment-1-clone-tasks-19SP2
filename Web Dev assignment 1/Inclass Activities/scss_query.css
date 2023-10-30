@@ -1,0 +1,16 @@
+/*@mixin is similar to function with parameters
+breakpoint is a variable, ie the name of the function*/
+div {
+  height: 200px;
+  background-color: #ffa3a3;
+}
+@media screen and (min-width: 500px) and (max-width: 700px) {
+  div {
+    background-color: #a4ffa9;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  div {
+    background-color: #a5c7ff;
+  }
+}/*# sourceMappingURL=scss_query.css.map */

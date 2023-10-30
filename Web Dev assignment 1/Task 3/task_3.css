@@ -1,1 +1,104 @@
-/*# sourceMappingURL=task_3.css.map */
+/*801px and above: header image url is https://via.placeholder.com/400
+    - Between 481px and 800px: header image url is https://via.placeholder.com/300
+    - 480px and below: header image url is https://via.placeholder.com/300
+    Circles in .container.circles should be inline at 621px and above, otherwise they should stack vertically.
+    Circle radii are 70px, 80px, 90px and 100px.
+
+ 7. The row / circle background colours are: #4e89ae #43658b #ed6663 #ffa372.
+
+ 8. The header and footer background colour is #8ccff7.
+
+ 9. The circle and row hover color is #444.
+
+10. Footer height is 50px.*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.bands .bands:hover, .bands .fourth, .bands .third, .bands .second, .bands .first {
+  width: 100%;
+  height: 40px;
+}
+
+.box_container {
+  background-color: #8ccff7;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 801px) and (max-width: 1280px) {
+  .box_container {
+    height: 400px;
+  }
+  .box_container .box2, .box_container .box3 {
+    display: none;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  .box_container {
+    height: 300px;
+  }
+  .box_container .box1, .box_container .box3 {
+    display: none;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .box_container {
+    height: 200px;
+  }
+  .box_container .box1, .box_container .box2 {
+    display: none;
+  }
+}
+
+.bands .first {
+  background-color: #4e89ae;
+}
+.bands .second {
+  background-color: #43658b;
+}
+.bands .third {
+  background-color: #ed6663;
+}
+.bands .fourth {
+  background-color: #ffa372;
+}
+.bands .bands:hover {
+  background-color: #444;
+}
+
+.circle_container {
+  margin-top: 50px;
+}
+.circle_container .circle1 {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  background-color: #4e89ae;
+}
+.circle_container .circle2 {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background-color: #43658b;
+}
+.circle_container .circle3 {
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  background-color: #ed6663;
+}
+.circle_container .circle4 {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: #ffa372;
+}
+.circle_container .circle5 {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  background-color: #4e89ae;
+}/*# sourceMappingURL=task_3.css.map */

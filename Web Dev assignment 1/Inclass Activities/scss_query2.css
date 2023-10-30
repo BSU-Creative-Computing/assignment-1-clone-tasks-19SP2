@@ -1,0 +1,31 @@
+footer, section, header {
+  height: 200px;
+  border: 7px solid black;
+  margin-bottom: 10px;
+}
+
+header {
+  background-color: #ffa3a3;
+}
+
+section {
+  background-color: #a4ffa9;
+}
+
+footer {
+  background-color: #a5c7ff;
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  footer {
+    display: none;
+  }
+}
+
+header {
+  background-color: #a5c7ff;
+}
+@media screen and (min-width: 500px) and (max-width: 700px) {
+  header {
+    display: none;
+  }
+}/*# sourceMappingURL=scss_query2.css.map */

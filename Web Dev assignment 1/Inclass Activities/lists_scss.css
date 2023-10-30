@@ -1,0 +1,36 @@
+/*index starts from 1 in SCSS*/
+.img1 {
+  border: 3px solid yellow;
+  border-radius: 10px;
+  width: 50%;
+  height: auto;
+}
+
+/*nth used to select particular value*/
+.img2 {
+  border: 3px solid green;
+  border-radius: 30px;
+  width: 50%;
+  height: auto;
+}
+
+.img3 {
+  border: 3px solid blue;
+  border-radius: 40px;
+  width: 50%;
+  height: auto;
+}
+
+.img4 {
+  border: 3px solid purple;
+  border-radius: 50px;
+  width: 50%;
+  height: auto;
+}
+
+.img5 {
+  border: 3px solid red;
+  border-radius: 0px;
+  width: 50%;
+  height: auto;
+}/*# sourceMappingURL=lists_scss.css.map */

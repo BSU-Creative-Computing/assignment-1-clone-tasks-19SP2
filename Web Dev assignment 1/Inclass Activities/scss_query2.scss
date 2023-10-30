@@ -1,0 +1,39 @@
+@mixin breakpoint($minwidth, $maxwidth){
+    @media screen and (min-width: $minwidth) and (max-width:$maxwidth){
+        @content;
+    }
+}
+
+%element-styling{
+    height: 200px;
+    border: 7px solid black;
+    margin-bottom: 10px;
+}
+
+$colors: #ffa3a3 #a4ffa9 #a5c7ff;
+
+header{
+    @extend %element-styling;
+    background-color: nth($colors, 1);
+}
+
+section{
+    @extend %element-styling;
+    background-color: nth($colors, 2);
+}
+
+footer{
+    @extend %element-styling;
+    background-color: nth($colors, 3);
+    @include breakpoint(700px, 900px){
+        display: none;
+    }
+}
+
+header{
+    @extend %element-styling;
+    background-color: nth($colors, 3);
+    @include breakpoint(500px, 700px){
+        display: none;
+    }
+}
