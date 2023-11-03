@@ -14,6 +14,7 @@ $shadowcolor: grey;
 body{
     font-size: $fontsize;
     font-family: $fontfam;
+    background-color: rgb(216, 216, 216);
 }
 
 nav{
@@ -54,21 +55,20 @@ nav{
 }
 
 .container{ 
-    margin-left: 5%;
-    margin-right: 5%;
     padding-top: 15px;
     justify-content: center;
     & div{
         box-shadow: 2px 2px 3px $shadowcolor;
+        background-color: white;
     }
     & button{
+        width: 100px;
         background-color: $bgcolor;
         color: $fontcolor;
         padding: 10px;
         border-radius: 3px;
         cursor: pointer;
         float: right;
-        margin-top: 3%;
     }
     & img{ 
         width: 100%;
@@ -76,22 +76,33 @@ nav{
     }
     & h1, p{
         box-sizing: border-box;
-        padding: 5px;
+        padding: 10px;
     }
     & p{
         color: $pcolor;
     }
 }
 
-@media screen and (min-width: 1025px){ /*Tablet/laptop Landscape*/
+footer{
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (min-width: 1281px){ 
+    nav ul li:first-child{
+        display: none;
+    }
+    
     .container{    
+        margin-left: 5%;
+        margin-right: 5%;
         display: grid;
         grid-template-columns: 620px 170px 170px;
         grid-template-rows: auto 450px 100px;
         grid-gap: 10px;
         & div:not(.endgame){ /*applies style to all BUT not to class endgame*/
             width: 170px;
-            height: 550px;
+            height: 600px;
             box-sizing: border-box;
             padding: 10px;
         }
@@ -99,96 +110,150 @@ nav{
             width: fit-content;
             height: 800px;
             grid-row: 1/3;
-            & h1, p{
-                box-sizing: border-box;
-                padding: 10px;
-            }
-            & button{
-                margin-right: 15px;
+            & h1, p, button{
+                margin: 10px;
             }
         } 
     }
 }
 
-@media screen and (min-width: 801px) and (max-width: 1024px){ /*Large mobile/tablet Portrait*/
+@media screen and (min-width: 1025px) and (max-width: 1280px){ 
     body{
         font-size: medium;
     }
 
+    nav ul li:first-child{
+        display: none;
+    }
+
     .container{
+        margin-right: 2%;
+        margin-left: 2%;
         display: grid;
-        grid-template-columns: 430px 160px 160px;
-        grid-template-rows: auto 450px 100px;
+        grid-template-columns: 60% 20% 20%;
+        grid-template-rows: auto auto auto;
         grid-gap: 10px;
         & div:not(.endgame){ /*applies style to all BUT not to class endgame*/
-            width: 150px;
+            width: fit-content;
             height: 700px;
             box-sizing: border-box;
             padding: 10px;
         }
         & .endgame{
             width: fit-content;
-            height: 800px;
+            height: 900px;
             grid-row: 1/3;
-            & h1, p{
-                box-sizing: border-box;
-                padding: 13px;
-            }
-            & button{
-                margin-right: 15px;
+            & h1, p, button{
+                margin: 10px;
             }
         } 
     }
 }
 
-@media screen and (min-width: 481px) and (max-width: 800px){  /*Large mobile/tablet Portrait*/
+@media screen and (min-width: 801px) and (max-width: 1024px){
     body{
-        font-size: large;
+        font-size: medium;
+    }
+
+    nav ul li:first-child{
+        display: none;
     }
 
     .container{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: flex-start;
-        gap: 25px;
+        margin-right: 2%;
+        margin-left: 2%;
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: auto auto auto auto auto;
+        grid-gap: 10px;
         & div:not(.endgame){ /*applies style to all BUT not to class endgame*/
+            width: fit-content;
+            height: 700px;
             box-sizing: border-box;
-            padding: 20px;
+            padding: 10px;
         }
         & .endgame{
-            & h1, p{
-                box-sizing: border-box;
-                padding: 13px;
+            width: fit-content;
+            height: 900px;
+            grid-row: 1/3;
+            & h1, p, button{
+                margin: 10px;
             }
-            & button{
-                margin-right: 15px;
-                margin-bottom: 20px;
-            }
+        } 
+        & .predators{
+            grid-row: 3/4;
+            grid-column: 2/3;
+        }
+        & .rage{
+            grid-row: 4/5;
+            grid-column: 2/3;
         }
     }
 }
 
-@media screen and (max-width: 480px){  /*Standard resolution mobile Portrait*/
+@media screen and (min-width: 481px) and (max-width: 800px){  
     body{
         font-size: large;
     }
 
     nav{
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
+        & ul li:not(:first-child){
+            display: none;
+        }
+        & textarea{
+            display: none;
+        }
+    }
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3px;
+        & div:not(.endgame){
+            width: 48%;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+    }
+
+    .endgame{
+        padding: 20px;
+        width: 91%;
+        & h1, p, button{
+            margin: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px){ 
+    body{
+        font-size: large;
+    }
+
+    nav{
+        & ul li:not(:first-child){
+            display: none;
+        }
+        & textarea{
+            display: none;
+        }
     }
 
     .container div{
-        height: fit-content;
         display: flex;
         flex-wrap: nowrap;
         flex-direction: column;
         padding-bottom: 6%;
-        & img:not(.endgame img){ /*applies style to all BUT not to class endgame*/
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        & img{ /*applies style to all BUT not to class endgame*/
             box-sizing: border-box;
             padding: 10px;
         }
+        & button{
+            margin: 10px;
+        }
+
     }
 }
