@@ -40,7 +40,7 @@ footer{
     }
     section{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr); /*The grid will have 3 fractional units*/
     }
 }
 
@@ -54,7 +54,7 @@ footer{
 @media screen and (min-width: 481px) and (max-width: 800px){  /*Large mobile/tablet Portrait*/
     section{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); /*The grid will have 2 fractional units*/
     }
 }
 

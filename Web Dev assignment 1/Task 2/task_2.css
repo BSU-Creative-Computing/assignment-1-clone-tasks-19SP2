@@ -1,3 +1,5 @@
+/*SCSS Variables used for background color, font color, 
+paragraph text color, font family, font size and shadow color*/
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +12,7 @@ body {
   background-color: rgb(216, 216, 216);
 }
 
-nav {
+nav { /*display flex used*/
   background-color: rgb(57, 98, 232);
   color: white;
   padding: 15px;
@@ -27,7 +29,7 @@ nav textarea { /*Nesting in SCSS*/
   border: 1px solid grey;
   box-shadow: 2px 2px 3px grey;
 }
-nav ul {
+nav ul { /*display flex used*/
   list-style-type: none;
   display: flex;
   align-items: center;
@@ -86,17 +88,17 @@ footer {
   padding: 20px;
 }
 
-@media screen and (min-width: 1281px) {
-  nav ul li:first-child {
+@media screen and (min-width: 1281px) { /*display grid used*/
+  nav ul li:first-child { /*Used to hide the list item Menu ie first child*/
     display: none;
   }
   .container {
     margin-left: 5%;
     margin-right: 5%;
     display: grid;
-    grid-template-columns: 620px 170px 170px;
-    grid-template-rows: auto 450px 100px;
-    grid-gap: 10px;
+    grid-template-columns: 620px 170px 170px; /*Column measures*/
+    grid-template-rows: auto 450px 100px; /*Row measures*/
+    grid-gap: 10px; /*Gap between the grid rows and columns*/
   }
   .container div:not(.endgame) { /*applies style to all BUT not to class endgame*/
     width: 170px;
@@ -108,17 +110,17 @@ footer {
     width: -moz-fit-content;
     width: fit-content;
     height: 800px;
-    grid-row: 1/3;
+    grid-row: 1/3; /*position starts at Row 1 and ends at Row 3*/
   }
   .container .endgame h1, .container .endgame p, .container .endgame button {
     margin: 10px;
   }
 }
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
+@media screen and (min-width: 1025px) and (max-width: 1280px) { /*display grid used*/
   body {
     font-size: medium;
   }
-  nav ul li:first-child {
+  nav ul li:first-child { /*Used to hide the list item Menu ie first child*/
     display: none;
   }
   .container {
@@ -126,7 +128,7 @@ footer {
     margin-left: 2%;
     display: grid;
     grid-template-columns: 60% 20% 20%;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto auto; /*Three rows that will be the size of the content in them*/
     grid-gap: 10px;
   }
   .container div:not(.endgame) { /*applies style to all BUT not to class endgame*/
@@ -146,11 +148,11 @@ footer {
     margin: 10px;
   }
 }
-@media screen and (min-width: 801px) and (max-width: 1024px) {
+@media screen and (min-width: 801px) and (max-width: 1024px) { /*display grid used*/
   body {
     font-size: medium;
   }
-  nav ul li:first-child {
+  nav ul li:first-child { /*Used to hide the list item Menu ie first child*/
     display: none;
   }
   .container {
@@ -186,14 +188,14 @@ footer {
     grid-column: 2/3;
   }
 }
-@media screen and (min-width: 481px) and (max-width: 800px) {
+@media screen and (min-width: 481px) and (max-width: 800px) { /*display flex used*/
   body {
     font-size: large;
   }
-  nav ul li:not(:first-child) {
+  nav ul li:not(:first-child) { /*Used to hide all the list items other than Menu ie first child*/
     display: none;
   }
-  nav textarea {
+  nav textarea { /*Used to hide the textarea*/
     display: none;
   }
   .container {
@@ -201,24 +203,24 @@ footer {
     flex-wrap: wrap;
     gap: 3px;
   }
-  .container div:not(.endgame) {
+  .container div:not(.endgame) { /*Applies CSS to all BUT .endgame*/
     width: 48%;
     box-sizing: border-box;
     padding: 10px;
   }
-  .endgame {
+  .container .endgame {
     padding: 20px;
     width: 91%;
   }
-  .endgame h1, .endgame p, .endgame button {
+  .container .endgame h1, .container .endgame p, .container .endgame button {
     margin: 10px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) { /*display flex used*/
   body {
     font-size: large;
   }
-  nav ul li:not(:first-child) {
+  nav ul li:not(:first-child) { /*Used to hide all the list items other than Menu ie first child*/
     display: none;
   }
   nav textarea {
@@ -233,7 +235,7 @@ footer {
     margin-left: 10px;
     margin-right: 10px;
   }
-  .container div img { /*applies style to all BUT not to class endgame*/
+  .container div img {
     box-sizing: border-box;
     padding: 10px;
   }
