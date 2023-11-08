@@ -84,7 +84,7 @@ nav ul a:hover {
 
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 60px;
 }
 
 @media screen and (min-width: 1281px) { /*display grid used*/
